@@ -3,6 +3,10 @@
    
 
     font-family: Roboto;
+    
+}
+.bar {
+    display: none;
 }
 body{
     height: 100vh;
@@ -91,4 +95,50 @@ nav img {
 .imgs-div :last-child {
     height: 89vh;
     padding-right: 40px;
+}
+
+@media screen  and (max-width: 800px){
+  
+    
+    body {
+        width: 100vw;
+       
+    }
+    .nav-items , .signin-btn {
+        display: none;
+    }
+    .bar {
+        display: block;
+        background: none;
+        border: none;
+       
+    }
+    nav {
+        margin-top: 20px;
+    }
+    .bar img {
+        width: 36px;
+    }
+    .intro-section{
+        flex-direction: column-reverse;
+    }
+    .imgs-div :last-child {
+        height: 39vh;
+        margin-left: 20vw;
+        
+    }
+    .vector-img {
+
+        display: none;
+    }
+    .vector-dot {
+       display: none;
+    }
+    .left-section {
+        padding-top: 0;
+    }
+      
+          
+
+
 }
